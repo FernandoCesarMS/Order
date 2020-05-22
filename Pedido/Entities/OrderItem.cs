@@ -16,10 +16,9 @@ namespace Pedido.Entities
             Product = product;
         }
 
-        public double subTotal()
-        {
-
-            return 0.0;
+        public double SubTotal()
+        { 
+            return Price*Quantity;
         }
     }
 }
