@@ -11,6 +11,11 @@ namespace Pedido.Entities
         public OrderStatus Status { get; set; }
         public Client Client { get; set; }
         public List<OrderItem> List = new List<OrderItem>();
+        public Order(DateTime moment,OrderStatus status)
+        {
+            Moment = moment;
+            Status = status;
+        }
         public void addItem(OrderItem item)
         {
 
